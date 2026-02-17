@@ -1,5 +1,4 @@
 
-```markdown
 # 🌐 Web Application Development Laboratory (WADL)
 ## Third Year – Information Technology  
 ### Savitribai Phule Pune University (2019 Course)
@@ -123,20 +122,6 @@ Develop a Full Stack Web Application in any domain:
 - jQuery Mobile
 
 ---
-
-# 📌 Repository Structure Example
-
-```
-
-TE.IT.WAD/
-│
-├── Assignment 1/
-├── Assignment 2/
-├── Assignment 3/
-├── Assignment 4/
-└── Mini Project/
-
-```
 
 ---
 
