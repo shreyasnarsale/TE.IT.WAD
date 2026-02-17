@@ -123,7 +123,6 @@ Develop a Full Stack Web Application in any domain:
 
 ---
 
----
 
 # 👨‍💻 Student Details
 
@@ -136,5 +135,5 @@ Develop a Full Stack Web Application in any domain:
 
 # 📜 License
 This project is developed for academic laboratory submission purposes.
-```
+
 
