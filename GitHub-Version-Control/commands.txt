@@ -1,0 +1,32 @@
+# Clone repository
+git clone https://github.com/your-username/repository-name.git
+cd repository-name
+
+# Add files
+git add .
+
+# Commit changes
+git commit -m "Initial commit"
+
+# Push to GitHub
+git push origin main
+
+# Create and switch to new branch
+git checkout -b new-feature
+
+# Add changes in branch
+git add .
+git commit -m "Feature added"
+git push origin new-feature
+
+# Switch to main branch
+git checkout main
+
+# Pull latest changes
+git pull origin main
+
+# Merge branch
+git merge new-feature
+
+# Push merged code
+git push origin main
