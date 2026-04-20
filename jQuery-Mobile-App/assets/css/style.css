@@ -1,0 +1,158 @@
+/* =========================
+   Global Theme Variables
+========================= */
+:root {
+  --brand-primary: #004e64;
+  --brand-secondary: #00a5cf;
+  --brand-accent: #f18f01;
+  --surface: #ffffff;
+  --surface-soft: #f4f7f9;
+  --text-main: #1c2730;
+  --text-muted: #5a6975;
+  --danger: #b42318;
+  --success: #067647;
+}
+
+/* =========================
+   Base Styles
+========================= */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-main);
+  background: linear-gradient(180deg, #eef5f8 0%, #dcecf3 100%);
+}
+
+.ui-page {
+  background: transparent;
+}
+
+.ui-content {
+  padding: 1rem;
+}
+
+/* =========================
+   Header and Footer Styling
+========================= */
+.ui-header,
+.ui-footer {
+  border: none;
+}
+
+.ui-header .ui-title,
+.ui-footer h4 {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.ui-bar-b {
+  background: var(--brand-primary);
+  color: #fff;
+}
+
+/* =========================
+   Panel Card Styles
+========================= */
+.panel-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 78, 100, 0.1);
+}
+
+.panel-card h2 {
+  margin-top: 0;
+  color: var(--brand-primary);
+}
+
+.panel-card p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* =========================
+   Collapsible and List Styles
+========================= */
+.content-collapsible .ui-collapsible-heading-toggle {
+  background: var(--surface-soft);
+  border: 1px solid #d7e2e8;
+  border-radius: 12px;
+}
+
+.ui-listview > li h2 {
+  color: var(--brand-primary);
+}
+
+.ui-listview > li p {
+  color: var(--text-muted);
+}
+
+/* =========================
+   Service List Styles
+========================= */
+.service-list > li {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* =========================
+   Form and Validation Styles
+========================= */
+.error-msg {
+  display: block;
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  min-height: 1rem;
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.form-status.success {
+  display: block;
+  color: var(--success);
+  background: #ecfdf3;
+  border: 1px solid #abefc6;
+}
+
+.form-status.error {
+  display: block;
+  color: var(--danger);
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+}
+
+/* =========================
+   Button Customization
+========================= */
+.ui-btn-b {
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+}
+
+.ui-btn-b:hover,
+.ui-btn-b:focus {
+  background: #0087a9;
+  border-color: #0087a9;
+}
+
+/* =========================
+   Mobile-First Responsive Tweaks
+========================= */
+@media (min-width: 600px) {
+  .ui-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .panel-card {
+    padding: 1.25rem;
+  }
+}

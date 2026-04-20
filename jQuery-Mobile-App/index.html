@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Mobile Professional Site</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- jQuery Mobile CDN CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================= HOME PAGE ========================= -->
+  <div data-role="page" id="home">
+    <!-- Header with fixed position and navbar -->
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Mobile Showcase</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="info">About</a></li>
+          <li><a href="#services" data-icon="grid">Services</a></li>
+          <li><a href="#contact" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main content section -->
+    <div role="main" class="ui-content">
+      <!-- Welcome card section -->
+      <section class="panel-card">
+        <h2>Welcome to Our Mobile Web Experience</h2>
+        <p>
+          This is a professional jQuery Mobile website built with a single-page,
+          multi-view architecture for smooth transitions and a native-app feel.
+        </p>
+        <a href="#services" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-arrow-r ui-btn-icon-right">Explore Services</a>
+      </section>
+
+      <!-- Collapsible section -->
+      <div data-role="collapsible" data-collapsed="true" class="content-collapsible">
+        <h4>Why This Demo Stands Out</h4>
+        <p>It combines jQuery Mobile components, custom branding, responsive layout, and practical form validation.</p>
+      </div>
+
+      <!-- Filterable listview section -->
+      <section>
+        <h3>Quick Features List</h3>
+        <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search features...">
+          <li><a href="#about">Single-page multi-view architecture</a></li>
+          <li><a href="#home">Responsive mobile-first layout</a></li>
+          <li><a href="#services">Service cards and action buttons</a></li>
+          <li><a href="#contact">Contact form with validation</a></li>
+          <li><a href="#home">Fixed header and footer components</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Footer with fixed position -->
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <h4>&copy; 2026 Mobile Showcase</h4>
+    </div>
+  </div>
+
+  <!-- ========================= ABOUT PAGE ========================= -->
+  <div data-role="page" id="about">
+    <!-- Header with fixed position and navbar -->
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>About</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#about" class="ui-btn-active ui-state-persist" data-icon="info">About</a></li>
+          <li><a href="#services" data-icon="grid">Services</a></li>
+          <li><a href="#contact" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main content section -->
+    <div role="main" class="ui-content">
+      <section class="panel-card">
+        <h2>Project Description</h2>
+        <p>
+          This project demonstrates how to build a polished mobile website with jQuery Mobile,
+          using reusable page templates, UI widgets, and light custom styling to create a modern look.
+        </p>
+      </section>
+
+      <div data-role="collapsible-set">
+        <div data-role="collapsible" data-collapsed="false">
+          <h4>Our Mission</h4>
+          <p>Deliver intuitive mobile experiences with clean structure and maintainable code.</p>
+        </div>
+        <div data-role="collapsible">
+          <h4>Technology Stack</h4>
+          <p>HTML5, CSS3, jQuery, and jQuery Mobile from CDN for fast setup and portability.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer with fixed position -->
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <h4>&copy; 2026 Mobile Showcase</h4>
+    </div>
+  </div>
+
+  <!-- ========================= SERVICES PAGE ========================= -->
+  <div data-role="page" id="services">
+    <!-- Header with fixed position and navbar -->
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Services</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="info">About</a></li>
+          <li><a href="#services" class="ui-btn-active ui-state-persist" data-icon="grid">Services</a></li>
+          <li><a href="#contact" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main content section -->
+    <div role="main" class="ui-content">
+      <section class="panel-card">
+        <h2>What We Offer</h2>
+        <p>Choose from service packages tailored for mobile product teams.</p>
+      </section>
+
+      <!-- Service cards rendered as listview blocks -->
+      <ul data-role="listview" data-inset="true" class="service-list">
+        <li>
+          <h2>UI/UX Design</h2>
+          <p>Mobile-first interface design with practical workflows and polished visuals.</p>
+          <a href="#contact" class="ui-btn ui-btn-inline ui-mini ui-btn-b ui-icon-star ui-btn-icon-left">Request</a>
+        </li>
+        <li>
+          <h2>Web Development</h2>
+          <p>Fast and responsive front-end implementation with clean architecture.</p>
+          <a href="#contact" class="ui-btn ui-btn-inline ui-mini ui-btn-b ui-icon-gear ui-btn-icon-left">Request</a>
+        </li>
+        <li>
+          <h2>Support & Optimization</h2>
+          <p>Performance tuning, QA checks, and release support for production readiness.</p>
+          <a href="#contact" class="ui-btn ui-btn-inline ui-mini ui-btn-b ui-icon-check ui-btn-icon-left">Request</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer with fixed position -->
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <h4>&copy; 2026 Mobile Showcase</h4>
+    </div>
+  </div>
+
+  <!-- ========================= CONTACT PAGE ========================= -->
+  <div data-role="page" id="contact">
+    <!-- Header with fixed position and navbar -->
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Contact</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">Home</a></li>
+          <li><a href="#about" data-icon="info">About</a></li>
+          <li><a href="#services" data-icon="grid">Services</a></li>
+          <li><a href="#contact" class="ui-btn-active ui-state-persist" data-icon="mail">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main content section -->
+    <div role="main" class="ui-content">
+      <section class="panel-card">
+        <h2>Get in Touch</h2>
+        <p>Complete the form below. Validation is handled with jQuery before submission.</p>
+      </section>
+
+      <!-- Contact form section -->
+      <form id="contactForm" novalidate>
+        <div class="ui-field-contain">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your full name">
+          <small class="error-msg" id="nameError"></small>
+        </div>
+
+        <div class="ui-field-contain">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+          <small class="error-msg" id="emailError"></small>
+        </div>
+
+        <div class="ui-field-contain">
+          <label for="service">Interested Service</label>
+          <select name="service" id="service">
+            <option value="">Select a service</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Support & Optimization">Support & Optimization</option>
+          </select>
+          <small class="error-msg" id="serviceError"></small>
+        </div>
+
+        <div class="ui-field-contain">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Write your message"></textarea>
+          <small class="error-msg" id="messageError"></small>
+        </div>
+
+        <button type="submit" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left">
+          Submit
+        </button>
+        <button type="reset" class="ui-btn ui-corner-all ui-shadow ui-icon-refresh ui-btn-icon-left">
+          Reset
+        </button>
+      </form>
+
+      <div id="formStatus" class="form-status" aria-live="polite"></div>
+    </div>
+
+    <!-- Footer with fixed position -->
+    <div data-role="footer" data-position="fixed" data-theme="b">
+      <h4>&copy; 2026 Mobile Showcase</h4>
+    </div>
+  </div>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- jQuery Mobile CDN JS -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
