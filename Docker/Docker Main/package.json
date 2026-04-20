@@ -1,0 +1,17 @@
+{
+  "name": "my-docker",
+  "version": "1.0.0",
+  "description": "Node Docker App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
+
